@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#090908" />
+  <meta name="description" content="BayanLedger — A decentralized municipal project monitoring and budget accountability platform for the Municipality of Sta. Cruz, Laguna." />
+  <title>BayanLedger | Municipality of Sta. Cruz, Laguna</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Playfair+Display:ital,wght@0,600..800;1,600..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Ambient floating lights -->
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="ambient ambient-three" aria-hidden="true"></div>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#home" aria-label="BayanLedger Sta. Cruz Home">
+      <div class="seal" aria-hidden="true">
+        <img src="pic/stc.webp" alt="Official Seal of Sta. Cruz, Laguna" />
+      </div>
+      <div class="brand-copy">
+        <strong><span>BAYAN</span>LEDGER</strong>
+        <small>STA. CRUZ, LAGUNA</small>
+      </div>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav" id="mainNav">
+      <a class="active" href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="#showcase">Showcase</a>
+      <a href="#research">Research</a>
+      <a href="#team">Team</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="header-cta" id="headerDemoBtn">
+        System Demo <span>↗</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow">
+          <span class="eyebrow-dot"></span>
+          <span>STA. CRUZ MPDO • DECENTRALIZED MONITORING</span>
+        </div>
+        <h1>Buwis natin.<br>Proyekto natin.<br><em>Ledger natin.</em></h1>
+        <p class="hero-lead">
+          BAYANLEDGER is a decentralized municipal project monitoring and participatory budget accountability system developed for the Municipal Planning and Development Office (MPDO) of Sta. Cruz, Laguna.
+        </p>
+        
+        <div class="hero-actions">
+          <button class="btn btn-gold" id="previewButton">
+            <span>Interactive Demo</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
+            </svg>
+          </button>
+          <a class="btn btn-outline" href="#showcase">
+            <span>Live System Showcase</span>
+          </a>
+        </div>
+
+        <div class="hero-proof">
+          <span class="proof-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </span>
+          <span>TRANSPARENCY</span><i></i>
+          <span>ACCOUNTABILITY</span><i></i>
+          <span>TRUST</span><i></i>
+          <span>IMMUTABLE RECORDS</span>
+        </div>
+      </div>
+
+      <!-- Hero Visual (Interactive 3D Decentralized Ledger) -->
+      <div class="hero-visual" id="heroVisual" aria-label="Interactive Decentralized Ledger Visualization">
+        <div class="ledger-stage" id="ledgerStage" aria-hidden="true">
+          <!-- Ambient Core Aura -->
+          <div class="stage-halo"></div>
+
+          <!-- Dynamic Energy Beam Connections -->
+          <svg class="energy-svg" viewBox="0 0 380 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="beamGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#f8d982" stop-opacity="0.85"/>
+                <stop offset="50%" stop-color="#e8b64c" stop-opacity="0.35"/>
+                <stop offset="100%" stop-color="#8f6324" stop-opacity="0.08"/>
+              </linearGradient>
+            </defs>
+            <line class="energy-beam beam-v" x1="190" y1="190" x2="190" y2="48" />
+            <line class="energy-beam beam-h" x1="190" y1="190" x2="345" y2="190" />
+            <line class="energy-beam beam-v" x1="190" y1="190" x2="190" y2="332" />
+            <line class="energy-beam beam-h" x1="190" y1="190" x2="35" y2="190" />
+          </svg>
+
+          <!-- Inner Decorative Orbital Ring -->
+          <div class="orbit-ring orbit-ring-1"></div>
+
+          <!-- Mid Orbital Track (Rotates Clockwise: MPDO & Audit Nodes) -->
+          <div class="orbit-track orbit-track-mid">
+            <div class="orbit-ring orbit-ring-2"></div>
+            <!-- Satellite 1: MPDO Validator Node -->
+            <div class="satellite-carrier carrier-1">
+              <div class="satellite-node" title="Sta. Cruz MPDO Validator Node">
+                <div class="satellite-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 21h18M3 10h18M5 6l7-3 7 3M4 10v11M20 10v11M8 14v3M12 14v3M16 14v3"/>
+                  </svg>
+                </div>
+                <span class="satellite-ping"></span>
+                <span class="satellite-label">MPDO VALIDATOR</span>
+              </div>
+            </div>
+            <!-- Satellite 4: Digital Audit Node -->
+            <div class="satellite-carrier carrier-4">
+              <div class="satellite-node" title="Digital Audit Node">
+                <div class="satellite-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/>
+                  </svg>
+                </div>
+                <span class="satellite-ping"></span>
+                <span class="satellite-label">AUDIT NODE</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Outer Orbital Track (Rotates Counter-Clockwise: Treasury & Citizen Nodes) -->
+          <div class="orbit-track orbit-track-outer">
+            <div class="orbit-ring orbit-ring-3"></div>
+            <!-- Satellite 2: Treasury & Budget Node -->
+            <div class="satellite-carrier carrier-2">
+              <div class="satellite-node" title="Treasury & Budget Node">
+                <div class="satellite-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                  </svg>
+                </div>
+                <span class="satellite-ping"></span>
+                <span class="satellite-label">TREASURY NODE</span>
+              </div>
+            </div>
+            <!-- Satellite 3: Citizen Transparency Node -->
+            <div class="satellite-carrier carrier-3">
+              <div class="satellite-node" title="Citizen Transparency Node">
+                <div class="satellite-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                  </svg>
+                </div>
+                <span class="satellite-ping"></span>
+                <span class="satellite-label">CITIZEN NODE</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Central Genesis Node Assembly -->
+          <div class="core-node-float">
+            
+              <div class="core-node-inner">
+                <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="m16 3 11 6.5v13L16 29 5 22.5v-13L16 3Z"/>
+                  <path d="m5 9.5 11 6.5 11-6.5M16 16v13"/>
+                  <circle cx="16" cy="16" r="3" fill="#e8b64c"/>
+                </svg>
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating Glassmorphic Ledger Card -->
+        <div class="ledger-card" id="ledgerCard">
+          <div class="ledger-glow-border"></div>
+          <div class="ledger-heading">
+            <span class="live-dot"></span>
+            <div class="ledger-net-badge">
+              <span>STA. CRUZ NET</span>
+              <small>MPDO LEDGER</small>
+            </div>
+            <span class="lock" aria-label="Cryptographically Secured">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+              </svg>
+            </span>
+          </div>
+
+          <div class="ledger-body">
+            <div class="ledger-row">
+              <span class="check">✓</span>
+              <span>Project Record</span>
+              <b>VERIFIED</b>
+            </div>
+            <div class="ledger-row">
+              <span class="check">✓</span>
+              <span>SARO Allocation</span>
+              <b>RECORDED</b>
+            </div>
+            <div class="ledger-row">
+              <span class="check">✓</span>
+              <span>Milestone QA</span>
+              <b>TRACKED</b>
+            </div>
+            <div class="ledger-row">
+              <span class="check">✓</span>
+              <span>Fund Movement</span>
+              <b>SECURE</b>
+            </div>
+          </div>
+
+          <div class="ledger-hash">
+            <div class="hash-meta">
+              <span>LATEST BLOCK HASH:</span>
+              <button class="hash-copy-mini" id="heroCopyHashBtn" title="Click to copy hash">COPY</button>
+            </div>
+            <code id="heroLiveHash">0x7F4B...9A21</code>
+          </div>
+        </div>
+
+        <!-- Floating Status Pill -->
+        <div class="floating-badge">
+          <span class="badge-pulse"></span>
+          <span>100% IMMUTABLE AUDIT TRAIL</span>
+          <span class="badge-sep">•</span>
+          <span class="badge-sub">STA. CRUZ MPDO</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Values & Value Pillars -->
+    <section class="metrics section-wrap" aria-label="Project core pillars">
+      <div class="metric-item">
+        <span class="metric-symbol" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/>
+          </svg>
+        </span>
+        <div>
+          <strong>Transparent</strong>
+          <small>Open project records and live status</small>
+        </div>
+      </div>
+
+      <div class="metric-item">
+        <span class="metric-symbol" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/>
+          </svg>
+        </span>
+        <div>
+          <strong>Traceable</strong>
+          <small>SARO and municipal fund disbursement trails</small>
+        </div>
+      </div>
+
+      <div class="metric-item">
+        <span class="metric-symbol" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+          </svg>
+        </span>
+        <div>
+          <strong>Accountable</strong>
+          <small>Milestone-gated contractor verification</small>
+        </div>
+      </div>
+
+      <div class="metric-item">
+        <span class="metric-symbol" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/>
+          </svg>
+        </span>
+        <div>
+          <strong>Tamper-Proof</strong>
+          <small>Cryptographic records on decentralized ledger</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section section-wrap" id="about">
+      <div class="section-kicker">01 / ABOUT THE PROJECT</div>
+      <div class="section-heading-row">
+        <h2>Technology that serves<br><em>the community.</em></h2>
+        <p>BayanLedger empowers local public project monitoring by harmonizing physical construction progress, fund allotments, and milestone verifications into a tamper-proof municipal ledger.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-panel">
+          <div>
+            <span class="small-label">OUR MISSION</span>
+            <h3>Public projects.<br>Clearer records.</h3>
+            <p>Designed hand-in-hand with the municipal planning realities of Sta. Cruz, Laguna, BayanLedger eliminates information silos and manual discrepancies between engineering, budgeting, and public reports.</p>
+          </div>
+          <a class="text-link" href="#research">
+            <span>Learn about the research methodology</span>
+            <span>↗</span>
+          </a>
+        </div>
+
+        <div class="about-details">
+          <article>
+            <span class="detail-number">01</span>
+            <div>
+              <h3>Centralized Project Records</h3>
+              <p>Consolidate infrastructure proposals, approved budgets, blueprints, and milestone timeline reports in one single source of truth.</p>
+            </div>
+          </article>
+
+          <article>
+            <span class="detail-number">02</span>
+            <div>
+              <h3>Budget Disbursement Visibility</h3>
+              <p>Every milestone payout is directly linked to an official SARO (Special Allotment Release Order) and contractor milestone sign-off.</p>
+            </div>
+          </article>
+
+          <article>
+            <span class="detail-number">03</span>
+            <div>
+              <h3>Milestone-Based Approvals</h3>
+              <p>Multi-signature approval workflow where engineering verification triggers immutable on-chain recording before funds are released.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section features-section" id="features">
+      <div class="section-wrap">
+        <div class="section-kicker">02 / SYSTEM CAPABILITIES</div>
+        <div class="section-heading-row">
+          <h2>Built around <em>accountability.</em></h2>
+          <p>Core capabilities engineered for transparency, security, and effortless coordination across municipal departments and citizen monitors.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card" data-tab="tab-verify" data-title="Budget Transparency" data-desc="Complete SARO tracking and itemized disbursement logs linked to municipal infrastructure projects." tabindex="0" role="button" aria-label="Explore Budget Transparency in simulator">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2"/><path d="M6 12h.01M18 12h.01"/>
+              </svg>
+            </div>
+            <div class="feature-tag">01 / FINANCE</div>
+            <h3>Budget Transparency</h3>
+            <p>Track municipal allocations, SARO funds, and contractor vouchers with real-time disbursement logs.</p>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+          </article>
+
+          <article class="feature-card" data-tab="tab-ledger" data-title="Immutable Ledger" data-desc="Immutable cryptographic block generation ensuring zero record alteration or backdating." tabindex="0" role="button" aria-label="Explore Immutable Ledger in explorer">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+              </svg>
+            </div>
+            <div class="feature-tag">02 / IMMUTABLE LEDGER</div>
+            <h3>Immutable Ledger</h3>
+            <p>Cryptographically hashed blocks guarantee that every inspection report and milestone is unalterable.</p>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+          </article>
+
+          <article class="feature-card" data-tab="tab-overview" data-title="Project Progress" data-desc="Track actual physical progress vs. expected project timelines across all 26 barangays." tabindex="0" role="button" aria-label="Explore Project Progress in overview">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/>
+              </svg>
+            </div>
+            <div class="feature-tag">03 / MONITORING</div>
+            <h3>Project Progress</h3>
+            <p>Compare physical inspection metrics against scheduled target dates and approved construction timelines.</p>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+          </article>
+
+          <article class="feature-card" data-tab="tab-ledger" data-title="Digital Audit Trail" data-desc="Comprehensive chronological timestamped audit trail accessible to municipal auditors and reviewers." tabindex="0" role="button" aria-label="Explore Digital Audit Trail in explorer">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/>
+              </svg>
+            </div>
+            <div class="feature-tag">04 / AUDIT</div>
+            <h3>Digital Audit Trail</h3>
+            <p>Instant chronological verification history for COA (Commission on Audit) and internal municipal inspectors.</p>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+          </article>
+
+          <article class="feature-card" data-tab="tab-overview" data-title="Citizen Monitoring" data-desc="Public portal allowing Sta. Cruz residents to view verified project updates and funding details." tabindex="0" role="button" aria-label="Explore Citizen Monitoring in overview">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <div class="feature-tag">05 / CITIZENS</div>
+            <h3>Citizen Monitoring</h3>
+            <p>Encourage civic engagement by giving Santa Cruz residents open access to project photos, costs, and statuses.</p>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+          </article>
+
+          <article class="feature-card" data-tab="tab-verify" data-title="Discrepancy Alerts" data-desc="Automated rule checking that flags budget overruns or milestone delays for rapid MPDO review." tabindex="0" role="button" aria-label="Explore Discrepancy Alerts in simulator">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
+              </svg>
+            </div>
+            <div class="feature-tag">06 / ALERTS</div>
+            <h3>Discrepancy Alerts</h3>
+            <p>Automatically flags milestone delays, unexpected disbursements, or undocumented amendments.</p>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Live System Showcase & Interactive Simulation -->
+    <section class="section-wrap" id="showcase">
+      <div class="system-cta">
+        <div class="cta-glow" aria-hidden="true"></div>
+        <div class="cta-content">
+          <div class="section-kicker">03 / LIVE SYSTEM SHOWCASE</div>
+          <h2>BayanLedger <em>in Action.</em></h2>
+          <p>
+            Experience how the Municipal Planning and Development Office (MPDO) monitors public infrastructure projects in real-time with cryptographic certainty.
+          </p>
+
+          <div class="cta-features-list">
+            <div class="cta-feature-row">
+              <span>✓</span> Real-time SARO release tracking with automated ledger hashing
+            </div>
+            <div class="cta-feature-row">
+              <span>✓</span> Multi-stakeholder sign-off (MPDO, Engineering, Contractor)
+            </div>
+            <div class="cta-feature-row">
+              <span>✓</span> Publicly verifiable SHA-256 block receipts for each disbursement
+            </div>
+          </div>
+
+          <div class="cta-actions">
+            <button class="btn btn-gold" id="showcaseDemoBtn">
+              <span>Open System Modal</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Interactive Mini Dashboard -->
+        <div class="mini-dashboard" id="miniDashboard">
+          <div class="mini-top">
+            <span>STA. CRUZ MPDO NETWORK</span>
+            <span class="status-pill">
+              <span class="badge-pulse"></span> TESTNET ACTIVE
+            </span>
+          </div>
+
+          <div class="mini-project-name">
+            <small>ACTIVE MUNICIPAL PROJECT</small>
+            <strong>Concreting of Farm-to-Market Road (Brgy. Bagumbayan)</strong>
+          </div>
+
+          <div class="mini-total">
+            <div>
+              <span>ALLOCATED BUDGET</span>
+              <strong id="simAllocated">₱8,450,000.00</strong>
+            </div>
+            <div style="text-align: right;">
+              <span>DISBURSED</span>
+              <strong id="simDisbursed" style="color: var(--white); font-size: 20px;">₱5,915,000 (70%)</strong>
+            </div>
+          </div>
+
+          <div class="progress" aria-label="Progress Bar">
+            <span class="progress-bar" id="simProgressBar" style="width: 70%;"></span>
+          </div>
+
+          <div class="mini-stats">
+            <div>
+              <small>CURRENT MILESTONE</small>
+              <strong id="simMilestone">Phase 3: Concrete Paving</strong>
+            </div>
+            <div>
+              <small>LATEST BLOCK</small>
+              <strong id="simBlockHeight">#14,892</strong>
+            </div>
+          </div>
+
+          <!-- Live Ledger Stream -->
+          <div class="mini-feed-header">
+            <span>RECENT LEDGER BLOCKS</span>
+            <small id="simTimer">Updated Just Now</small>
+          </div>
+
+          <div class="mini-transactions-list" id="miniTxList">
+            <div class="mini-transaction">
+              <div class="mini-tx-info">
+                <strong>Block #14,892 • Milestone 3 Inspection</strong>
+                <small>Hash: 0x8a92f4c0 • Approved by MPDO Engineer</small>
+              </div>
+              <span class="record-status">COMMITTED</span>
+            </div>
+            <div class="mini-transaction">
+              <div class="mini-tx-info">
+                <strong>Block #14,891 • SARO-2026-041 Tranche 3</strong>
+                <small>Disbursed: ₱2,100,000.00 to Verified Contractor</small>
+              </div>
+              <span class="record-status">COMMITTED</span>
+            </div>
+          </div>
+
+          <div class="sim-btn-row">
+            <button class="btn-sim-action" id="btnSimulateBlock">
+              + Simulate New Milestone Block Verification
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Section -->
+    <section class="section section-wrap research-section" id="research">
+      <div class="section-kicker">04 / RESEARCH OVERVIEW</div>
+      <div class="research-grid">
+        <div>
+          <h2>From challenges<br>to <em>clearer processes.</em></h2>
+          <p class="research-intro">
+            This study investigates how decentralized ledger technology (DLT) can be applied to local government project monitoring to eliminate paper-based bottlenecks and foster participatory budget transparency.
+          </p>
+          <div class="research-note">
+            <span>RESEARCH OBJECTIVE</span>
+            <p>Design, develop, test, and evaluate BayanLedger for the Municipal Planning and Development Office of Sta. Cruz, Laguna in accordance with ISO/IEC 25010 software quality standards.</p>
+          </div>
+        </div>
+
+        <div class="problem-list">
+          <span class="small-label">PROBLEMS THE PROJECT ADDRESSES</span>
+          <article>
+            <span>01</span>
+            <div>
+              <p><strong>Limited Real-Time Visibility:</strong> Delays between physical site progress and budget status updates.</p>
+            </div>
+          </article>
+          <article>
+            <span>02</span>
+            <div>
+              <p><strong>Vulnerable Paper Trails:</strong> Manual filing systems susceptible to transcription errors or misplacement.</p>
+            </div>
+          </article>
+          <article>
+            <span>03</span>
+            <div>
+              <p><strong>Disjointed Fund Tracking:</strong> Difficulty cross-referencing SARO allocations directly with physical accomplishment percentages.</p>
+            </div>
+          </article>
+          <article>
+            <span>04</span>
+            <div>
+              <p><strong>Fragmented Audit Reports:</strong> Slower reconciliation cycles for municipal planners and government auditors.</p>
+            </div>
+          </article>
+          <p class="research-disclaimer">
+            Academic capstone research conducted for the Municipality of Sta. Cruz, Laguna.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="section team-section" id="team">
+      <div class="section-wrap">
+        <div class="section-kicker">05 / THE PEOPLE BEHIND THE PROJECT</div>
+        <div class="section-heading-row">
+          <h2>Built by a team<br>with <em>a purpose.</em></h2>
+          <p>Meet the researchers and developers dedicated to pioneering transparent civic technology for Sta. Cruz, Laguna.</p>
+        </div>
+
+        <div class="team-grid">
+          <article class="team-card">
+            <div class="avatar">
+              <img src="pic/jaz.png" alt="Jazaira M. Alias" loading="lazy" />
+            </div>
+            <h3>Jazaira M. Alias</h3>
+            <span class="team-role">Project Lead & System Analyst</span>
+            <span class="team-badge">CAPSTONE TEAM</span>
+          </article>
+
+          <article class="team-card">
+            <div class="avatar">
+              <img src="pic/harry.jpg" alt="Harry Anthony A. Martillano" loading="lazy" />
+            </div>
+            <h3>Harry Anthony A. Martillano</h3>
+            <span class="team-role">Distributed Systems & Backend Developer</span>
+            <span class="team-badge">CAPSTONE TEAM</span>
+          </article>
+
+          <article class="team-card">
+            <div class="avatar">
+              <img src="pic/ari.png" alt="Arianna C. Surbano" loading="lazy" />
+            </div>
+            <h3>Arianna C. Surbano</h3>
+            <span class="team-role">UI/UX & Frontend Developer</span>
+            <span class="team-badge">CAPSTONE TEAM</span>
+          </article>
+        </div>
+
+        <p class="team-footnote">
+          BayanLedger Capstone Project — Municipality of Sta. Cruz, Laguna Academic Presentation.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="footer">
+    <div class="footer-brand">
+      <div class="seal small-seal" aria-hidden="true">
+        <img src="pic/stc.webp" alt="Sta. Cruz Seal" />
+      </div>
+      <div>
+        <strong>BAYANLEDGER</strong>
+        <small>STA. CRUZ, LAGUNA</small>
+      </div>
+    </div>
+    <p>Decentralized municipal project monitoring and budget accountability platform.</p>
+    <a href="#home">Back to top ↑</a>
+    <div class="copyright">
+      © <span id="year">2026</span> BayanLedger Capstone Project. Designed for academic and municipal demonstration purposes.
+    </div>
+  </footer>
+
+  <!-- Interactive Demo Modal -->
+  <div class="modal-backdrop" id="demoModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="demo-modal">
+      <button class="modal-close" id="closeModal" aria-label="Close dialog">×</button>
+      <span class="small-label">INTERACTIVE SYSTEM SIMULATOR</span>
+      <h2 id="modalTitle">BayanLedger Municipal Explorer</h2>
+      <p>
+        Preview live project milestones, verify cryptographic ledger hashes, and simulate real-time disbursements.
+      </p>
+
+      <!-- Modal Tabs -->
+      <div class="modal-tabs">
+        <button class="tab-btn active" data-tab="tab-overview">Project Overview</button>
+        <button class="tab-btn" data-tab="tab-ledger">Ledger Explorer</button>
+        <button class="tab-btn" data-tab="tab-verify">Disbursement Simulator</button>
+      </div>
+
+      <!-- Tab 1: Project Overview -->
+      <div class="tab-content active" id="tab-overview">
+        <div class="demo-records">
+          <div>
+            <span>Project Name:</span>
+            <strong>Rehabilitation of Town Plaza & Drainage</strong>
+          </div>
+          <div>
+            <span>Barangay Location:</span>
+            <strong>Poblacion IV, Sta. Cruz, Laguna</strong>
+          </div>
+          <div>
+            <span>Total Approved Allocation:</span>
+            <strong class="gold-text">₱12,500,000.00 (SARO-2026-088)</strong>
+          </div>
+          <div>
+            <span>Physical Accomplishment:</span>
+            <strong>74.5% (Milestone 3 of 4)</strong>
+          </div>
+          <div>
+            <span>Implementing Unit:</span>
+            <strong>MPDO & Municipal Engineering Office</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 2: Ledger Explorer -->
+      <div class="tab-content" id="tab-ledger">
+        <div class="demo-records">
+          <div>
+            <span>Block Height:</span>
+            <strong class="gold-text" id="modalBlockHeight">Block #14,892</strong>
+          </div>
+          <div>
+            <span>Block Hash:</span>
+            <div class="hash-code-inline">
+              <code id="modalBlockHash">0x8a92f4c029e16d47b0a31c590e4438bbfa88</code>
+              <button class="hash-copy-btn" id="modalCopyHashBtn" title="Copy Block Hash">Copy</button>
+            </div>
+          </div>
+          <div>
+            <span>Previous Hash:</span>
+            <code>0x71dc90b392a54e19f9331ab78e011409ac3b</code>
+          </div>
+          <div>
+            <span>Consensus Engine:</span>
+            <strong>Proof of Authority (Municipal Validator Quorum)</strong>
+          </div>
+          <div>
+            <span>Audit Status:</span>
+            <strong style="color: var(--success);">100% Cryptographically Verified ✓</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 3: Disbursement Simulator -->
+      <div class="tab-content" id="tab-verify">
+        <p style="font-size: 13px; color: var(--muted); margin-bottom: 15px;">
+          Simulate generating a new milestone payout transaction to see how BayanLedger cryptographically commits it to the ledger.
+        </p>
+        <div class="demo-records">
+          <div>
+            <span>Milestone Action:</span>
+            <strong id="modalSimAction">Phase 4 Final Inspection Verification</strong>
+          </div>
+          <div>
+            <span>Tranche Amount:</span>
+            <strong class="gold-text" id="modalSimAmount">₱3,187,500.00</strong>
+          </div>
+          <div>
+            <span>Signatures Required:</span>
+            <strong>MPDO Head ✓ • Municipal Accountant ✓ • Mayor's Office ✓</strong>
+          </div>
+        </div>
+        <button class="btn btn-gold modal-done" id="modalCommitBtn">
+          Commit Milestone to Ledger
+        </button>
+      </div>
+
+      <button class="btn btn-outline modal-done" id="doneModal" style="margin-top: 10px;">Close Preview</button>
+      <div class="copy-toast" id="copyToast" aria-live="polite">Hash copied to clipboard! ✓</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
